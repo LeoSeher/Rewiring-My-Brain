@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Progress Tracker</h1>
+
+    <!-- Points Section -->
+    <div>
+        <p>Points: <span id="points">305</span> / 500</p>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+
+        <!-- Buttons to Add/Remove Points -->
+        <div class="buttons">
+            <button onclick="addPoints(10)">+10 Points</button>
+            <button onclick="subtractPoints(10)">-10 Points</button>
+        </div>
+    </div>
+
+    <!-- Rank and Stars Section -->
+    <div>
+        <p>Rank: <span id="rank">Novice</span></p>
+        <p>Stars: <span id="stars"></span></p>
+        <p>Bars Fulfilled: <span id="barsFulfilled">1</span></p>
+    </div>
+
+    <!-- Streak Section -->
+    <div class="streak-container">
+        <p>Streak: <span id="streak">20</span> Days</p>
+        <span id="fire" class="fire">🔥</span>
+        <button onclick="increaseStreak()">+1 Streak</button>
+        <button onclick="decreaseStreak()">-1 Streak</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
